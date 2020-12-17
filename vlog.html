@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/topup.css">
+    </head>
+    <body>
+        <div class="grid-container">
+        <div class="main" id="top">
+            <div class="content1">
+                <img 
+                    src="images/hiking.jpg" 
+                    alt="hiking" 
+                    class="img"
+                    onclick="window.open('index.html', '_self');"
+                > 
+                    <div class="label2">
+                        Home 
+                    </div>
+    
+                <img 
+                    src="images/supboard.jpg" 
+                    class="img"
+                    onclick="window.open('package.html', '_self');"
+                > 
+                    <div class="label3">Packages
+                    </div>
+    
+                <img 
+                    src="images/rafting.jpg" 
+                    class="img"
+                    onclick="window.open('activities.html', '_self');"
+                >
+                    <div class="label4">
+                        Activities
+                    </div>
+    
+                <img 
+                    src="images/everest.jpg" 
+                    class="img"
+                    onclick="window.open('vlog.html', '_self');"
+                >
+                    <div class="label5">
+                        Vlogs
+                    </div>
+    
+                <img 
+                    src="images/annapurna.webp" 
+                    class="img"
+                    onclick="window.open('aboutus.html', '_self');"
+                >
+                    <div class="label6">
+                        About Us
+                    </div>	
+        </div>
+        </div>
+        <div class="main" id="first">
+            <div class="name">
+                        <p><b>Ashesh</b></p>       
+            </div>
+            <br />
+            <div class="comment">
+                <table>
+                    <tr>
+                        <td>Comment</td>
+                        <td>:</td>
+                        <td>text text text text text text text text text text text text text text text text 
+                            text text text text text text text text text text text text text text text text 
+                            text text text text text text text text text text text text text text text text 
+                            text text text text text text text text text text text text text text text text 
+                            text text text text text text text text text text text text text text text text 
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br />
+            <div class="photo">
+                <div class="polaroid" id="rotate_left">
+                    <img src="images/2.jpg" width="100%" height="100%">  
+                </div>
+                <div class="polaroid" id="rotate_right">
+                    <img src="images/3.jpg" width="100%" height="100%">
+                </div>
+                <div class="polaroid" id="rotate_left">
+                    <img src="images/4.jpg" width="100%" height="100%">
+                </div>
+                <div class="polaroid" id="rotate_right">
+                    <img src="images/5.jpg" width="100%" height="100%">
+                </div>
+                <div class="polaroid" id="rotate_left">
+                    <img src="images/6.jpg" width="100%" height="100%">             
+                </div>
+            </div>    
+            
+        </div>
+        
+        <div class="main" id="second">
+            <div class="name">
+                        <p><b>ADSDhesadsasdh</b></p>       
+            </div>
+            <br />
+            <div class="comment">
+                <table>
+                    <tr>
+                        <td>Comment</td>
+                        <td>:</td>
+                        <td>text text text text text text text text text text text text text text text text 
+                            text text text text text text text text text text text text text text text text 
+                            text text text text text text text text text text text text text text text text 
+                            text text text text text text text text text text text text text text text text 
+                            text text text text text text text text text text text text text text text text 
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br />
+            <div class="photo">
+                <div class="polaroid" id="rotate_left">
+                    <img src="7.jpg" width="100%" height="100%">  
+                </div>
+                <div class="polaroid" id="rotate_right">
+                    <img src="8.jpg" width="100%" height="100%">
+                </div>
+                <div class="polaroid" id="rotate_left">
+                    <img src="9.jpg" width="100%" height="100%">
+                </div>
+                <div class="polaroid" id="rotate_right">
+                    <img src="10.jpg" width="100%" height="100%">
+                </div>
+                <div class="polaroid" id="rotate_left">
+                    <img src="1 .jpg" width="100%" height="100%">             
+                </div>
+            </div>    
+            
+        </div>
+    </div>
+    </body>
+    <style> 
+       .grid-container {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 500px 700px 700px;
+            grid-gap: 20px;
+            background-color: green;
+            padding: 10px; 
+            grid-gap: 100px;
+        }
+
+        .grid-container > div.main {
+            padding: 20px 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            font-size: 30px;
+        }
+
+
+        body {
+          margin: 40px;
+          background-color: #E9E9E9;
+        }
+        
+        .polaroid{
+          width: 250px;
+          height: 200px;
+          padding: 10px 10px 10px 10px;
+          border: 1px solid #BFBFBF;
+          background-color: white;
+          box-shadow: 10px 10px 5px #aaaaaa;  
+        }
+
+        .photo{
+            left: 30px;
+           
+            position:relative;
+        }
+        
+        #rotate_right {
+          float: left;
+          -ms-transform: rotate(7deg); 
+          -webkit-transform: rotate(7deg);
+          transform: rotate(7deg);
+        }
+        
+        #rotate_left {
+          float: left;
+          -ms-transform: rotate(-8deg); 
+          -webkit-transform: rotate(-8deg); 
+          transform: rotate(-8deg);
+        }
+
+        .name{
+            width:100%;
+            height: 80px;
+            border: 2px solid red;    
+            font-size: 26px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .comment{
+            width:100%;
+            height: 30%;
+            border:2px solid blue;
+            font-size: 18px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: justify;
+            background: yellow;
+            overflow: hidden;
+        }
+
+        #rotate_left:hover,
+        #rotate_right:hover{
+            width: 800px;
+            height:500px;
+            -ms-transform: rotate(0deg); /* IE 9 */
+            -webkit-transform: rotate(0deg); /* Safari */
+            transform: rotate(0deg);
+            /* position: relative; */
+            z-index: 1;
+            left: 400px;
+        }
+        </style>
+</html>

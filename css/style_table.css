@@ -1,0 +1,27 @@
+table,
+        tr,
+        td,
+        th {
+            border: 2px solid black;
+            border-collapse: collapse;
+            align-content: center;
+            background-color: lightgrey;
+        }
+        
+        body {
+            background-image: url(1.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: black;
+        }
+        
+        caption {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        th{
+            font-weight:bold;
+            font-size:20px;
+        }

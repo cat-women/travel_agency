@@ -1,0 +1,3 @@
+database name : travel_agency
+table name : customers_information
+cols : id full_name address phone email user_name password

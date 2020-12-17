@@ -1,0 +1,70 @@
+
+        .part{
+            font-size: 30px;
+            color: white;
+        }
+
+        #first{
+            padding-left: 40%;
+            padding-top: 10%;
+        }
+        
+        #second{
+            padding-left: 48%;
+            padding-top: 2%;
+            font-size: 30px;
+        }
+
+        #third{
+            padding-left: 44%;
+            padding-top: 0%;
+        }
+        body {
+            background-image: url(../images/1.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: black;
+        }
+        
+        a{
+            color:white;
+            font-weight: bolder;
+        }
+        a:hover{
+            color:green;
+            font-size: 35px;
+        }
+        /* table,tr,td{
+            border: 2px solid black;
+    
+        } */
+        
+        .first_fieldset {
+            width: 270px;
+        }
+        
+        .second_fieldset {
+            width: 250px;
+        }
+        
+        .center {
+            text-align: center;
+        }
+    
+        button {
+            background-color: #4CAF50;
+            color:white;
+            font-size: 15px;
+            cursor: pointer;
+            font-weight: bolder;
+        }
+    
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        legend{
+            font-weight: bolder;
+            font-size: 20px ;
+        }

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign UP Form</title>
+    <!-- <script>
+        function reload() {
+            parent.location = 'frame.html';
+            // newtab.document.location.reload(true);
+            parent.loaction.reload(true);
+            parent.loaction.reload(true);
+        }
+    </script> -->
+</head>
+
+<body>
+    <form method="POST" action="http://localhost/Travel_Agency/backend/Insert_Record.php">
+        <table align="center">
+
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>
+                            Personal Information
+                        </legend>
+                        <table>
+                            <tr>
+                                <td>Name</td>
+                                <td>:</td>
+                                <td>
+                                    <input 
+                                        class="first_fieldset" 
+                                        type="text" 
+                                        name="full_name" 
+                                        placeholder="Enter your Full Name" 
+                                        required />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Address</td>
+                                <td>:</td>
+                                <td>
+                                    <input 
+                                        class="first_fieldset" 
+                                        type="text" 
+                                        name="address" 
+                                        placeholder="Enter your Address" 
+                                        required />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Contact</td>
+                                <td>:</td>
+                                <td>
+                                    <input 
+                                        class="first_fieldset" 
+                                        type="tel" 
+                                        name="phone" 
+                                        placeholder="Enter your Phone Number"
+                                        maxlength="10";
+                                        minlength="10"
+                                        required />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>:</td>
+                                <td>
+                                    <input 
+                                        class="first_fieldset" 
+                                        type="email" 
+                                        name="email" 
+                                        placeholder="Enter your Email" 
+                                        required />
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>
+                            Account Information
+                        </legend>
+                        <table>
+                            <tr>
+                                <td>User Name</td>
+                                <td>:</td>
+                                <td>
+                                    <input 
+                                        class="second_fieldset" 
+                                        type="text" 
+                                        name="user_name" 
+                                        placeholder="Enter Your User Name"
+                                        minlength="6" 
+                                        maxlength="18" 
+                                        required />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                                <td>:</td>
+                                <td>
+                                    <input 
+                                        class="second_fieldset" 
+                                        type="password" 
+                                        name="password" 
+                                        placeholder="Enter Your Password (8 - 10 letters)" 
+                                        minlength="8" 
+                                        maxlength="10" 
+                                        required />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="center">
+                                    <input style="width: 20%;" type="submit" value="Submit" onclick="window.open('index.html','_self');">
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td class="center"> 
+                    <button class="btn" id="fb">Login with Facebook</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="center"> 
+                    <button class="btn" id="gmail">Login with Gmail</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+<style>
+    body { 
+        background-image: url(images/1.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        color: black;
+    }
+
+    legend{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    /* table,tr,td{
+        border: 2px solid black;
+
+    } */
+    h3{
+        font-size: 23px;
+    }
+    .first_fieldset {
+        width: 270px;
+    }
+    
+    .second_fieldset {
+        width: 250px;
+    }
+    
+    .center {
+        text-align: center;
+    }
+
+    #fb {
+        background-color: #3B5998;
+        color: white;
+    }
+
+    #gmail {
+        background-color: #dd4b39;
+        color: white;
+    }
+
+    .btn {
+        width: 60%;
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+        margin: 5px 0;
+        opacity: 0.85;
+        display: inline-block;
+        font-size: 15px;
+        line-height: 9px;
+        text-decoration: none;      
+    }
+
+    .btn:hover{
+        opacity: 1;
+    }
+
+    input[type=submit] {
+        background-color: #4CAF50;
+        color:white;
+        font-size: 15px;
+        cursor: pointer;
+        font-weight: bolder;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+</style>
+</html>

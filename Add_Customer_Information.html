@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign UP Form</title>
+    <link rel="stylesheet" type="text/css" href="css/style_3.css">
+</head>
+
+<body>
+    <form method="POST" action="http://localhost/Travel_Agency/backend/Insert_Record.php">
+        <table align="center">
+            <tr>
+                <td class="center">
+                    <h2>Please Enter the Required Information</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>
+                            Personal Information
+                        </legend>
+                        <table>
+                            <tr>
+                                <td>Name</td>
+                                <td>:</td>
+                                <td>
+                                    <input 
+                                        class="first_fieldset" 
+                                        type="text" 
+                                        name="full_name" 
+                                        placeholder="Enter your Full Name" 
+                                        required />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Address</td>
+                                <td>:</td>
+                                <td>
+                                    <input 
+                                        class="first_fieldset" 
+                                        type="text" 
+                                        name="address" 
+                                        placeholder="Enter your Address" 
+                                        required />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Contact</td>
+                                <td>:</td>
+                                <td>
+                                    <input 
+                                        class="first_fieldset" 
+                                        type="tel" 
+                                        name="phone" 
+                                        placeholder="Enter your Phone Number"
+                                        maxlength="10";
+                                        minlength="10"
+                                        required />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>:</td>
+                                <td>
+                                    <input 
+                                        class="first_fieldset" 
+                                        type="email" 
+                                        name="email" 
+                                        placeholder="Enter your Email" 
+                                        required />
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>
+                            Account Information
+                        </legend>
+                        <table>
+                            <tr>
+                                <td>User Name</td>
+                                <td>:</td>
+                                <td>
+                                    <input 
+                                        class="second_fieldset" 
+                                        type="text" 
+                                        name="user_name" 
+                                        placeholder="Enter Your User Name"
+                                        minlength="6" 
+                                        maxlength="18" 
+                                        required />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                                <td>:</td>
+                                <td>
+                                    <input 
+                                        class="second_fieldset" 
+                                        type="password" 
+                                        name="password" 
+                                        placeholder="Enter Your Password (8 - 10 letters)" 
+                                        minlength="8" 
+                                        maxlength="10" 
+                                        required />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="center">
+                                    <button name="submit" type="submit" value="submit" onclick="reload()">Submit</button>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+<script>
+           function reload() {
+            parent.location.reload(true) = 'frame.html';
+        }
+</script>
+</html>

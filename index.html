@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/topup.css">
+<style>
+	body{
+		margin:0;
+		padding:0;	
+	}
+		.slider-container{
+			width:100%;
+			height:550px;
+			display:block;
+			position:relative;
+		}
+		.slider{
+			position:absolute;
+			height:100%;
+			width:100%;
+		}
+	@keyframes fade {
+	  0% {left:-600px;} 
+	  100%{left:0;}
+	 }
+		.pre , .next{
+		z-index:1;
+			padding:20px;
+			position:absolute;
+			display:block;
+			color:white;
+			font-size: 59px;
+			top:32%;
+			cursor:pointer; 
+			font-family: Mistral;
+			background-color:rgba(0,0,0,0.7);
+			
+	
+	
+		}
+		.next{right:0;}
+		
+		.pre:hover,.next:hover{
+			background-color:rgba(0,0,0,0.4);
+		} */
+	</style>
+	
+	
+	<script type="text/javascript">
+		var index=0;
+		var auto;
+		function pre(){
+			index--;
+			clearTimeout(auto);
+			show();
+		}
+		
+		function next(){
+			index++;
+			clearTimeout(auto);
+			show();
+		}
+		function show(){
+			var slider=document.getElementsByClassName('slider');
+			if(index<0){
+					index=slider.length-1;
+			}
+			if(index>=slider.length)
+			{
+				index=0;	
+			}
+			for(i=0;i<slider.length;i++){
+				slider[i].style.display='none';	
+			}
+			slider[index].style.display='block';
+			
+			 auto=setTimeout(next,3000);
+		}
+	</script>
+</head>
+<body>	
+	<div class="top-left" style="width: 500px;">
+		<img src="images/airborne.png" width="20%" height="150px">
+	</div>
+	<div>
+		<button onclick="window.open('form.html','_self');">Sign Up</button>
+		<button onclick="window.open('login.html','self');">Login</button>
+	</div>
+
+	</div>
+
+	<div class="slider1">
+		<div class="slider-container">
+			<img src="images/6.jpg" class="slider">
+    		<img src="images/1.jpg" class="slider">
+    		<img src="images/2.jpg" class="slider">
+    		<img src="images/3.jpg" class="slider">
+    		<div class="pre" onClick="pre();"> </div>
+    		<div class="next" onClick="next();">> </div>
+		</div>
+	</div>
+
+
+	<div class="logo1_container">
+		<label>
+			<img src="images/locater.png" class="logo1"> <h1> POPULAR ACTIVITES</h1>
+		</label>
+
+	
+	</div>
+		<div class="content1">
+			<img 
+				src="images/hiking.jpg" 
+				alt="hiking" 
+				class="img"
+				onclick="window.open('index.html', '_self');"
+			> 
+				<div class="label2">
+					Home 
+				</div>
+
+			<img 
+				src="images/supboard.jpg" 
+				class="img"
+				onclick="window.open('package.html', '_self');"
+			> 
+				<div class="label3">Packages
+				</div>
+
+			<img 
+				src="images/rafting.jpg" 
+				class="img"
+				onclick="window.open('activities.html', '_self');"
+			>
+				<div class="label4">
+					Activities
+				</div>
+
+			<img 
+				src="images/everest.jpg" 
+				class="img"
+				onclick="window.open('vlog.html', '_self');"
+			>
+				<div class="label5">
+					Vlogs
+				</div>
+
+			<img 
+				src="images/annapurna.webp" 
+				class="img"
+				onclick="window.open('aboutus.html', '_self');"
+			>
+				<div class="label6">
+					About Us
+				</div>	
+	</div>
+
+	<div class="blockline">
+		<div class="block1">
+			<div class="txt">WHY BOOK WITH US?</div>
+		</div>
+
+		<div class="block2">
+			<div><img src="images/like.png" class="logo3"> +40,000 </div>
+		</div>
+
+		<div class="block2">
+			<div><img src="images/award.png" class="logo3">AWARD WINNING</div>
+		</div>
+
+		<div class="block2">
+			<div><img src="images/lock.png" class="logo3">SECURE PAYMENT</div>
+		</div>
+	</div>
+
+	<div class="footermodel">
+			<div class="footer1" >
+				<img src="images/airborne.png" class="footer_img"> <br>
+				<label>Lets feel adventure with Airborne Adventure Nepal. Many exciting and amazing adventurous spots are included in the packages. We are here to get you there. Just give us an opportunity to serve you.</label>
+			</div>
+
+			<div class="footer2">
+				<span><b> <h2>CONTACT US</h2></b></span> <br> <br> <br>
+				<label>
+					Address : Paknajol Marg, 
+					<br>Banasthali, Kathmandu
+					Phone : +977-01-4350597 <br> <br>
+					info@airbornenepal.com
+				</label><br />
+				<br /> <br />
+
+				<a href=""><img src="images/fb.png" class="footerlogo"></a>
+				<img src="images/skype.png" class="footerlogo">
+				<img src="images/twitter2.png" class="footerlogo">
+				<img src="images/insta.png" class="footerlogo">	
+			</div>
+
+			<div class="closer">
+				<label>
+					Copyright 2019 Airborne Adventure Nepal, All Rights Reserved.
+				</label>
+			</div>
+			
+		</div>
+
+
+</body>
+</html>
